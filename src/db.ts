@@ -1,9 +1,11 @@
-import {Pool} from 'pg'
+import { Pool } from 'pg';
 
-export const pool = new Pool({
-    user: 'postgres',
-    host: 'localhost',
-    password: '',
-    database: 'schooldb',
-    port: 5432
+const pool = new Pool({
+  user: 'postgres',
+  host: 'localhost',
+  password: '111',
+  database: 'schooldb',
+  port: 5432,
 });
+
+export default pool;
