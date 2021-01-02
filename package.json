@@ -4,15 +4,22 @@
   "description": "school-api",
   "main": "index.js",
   "scripts": {
-    "start:dev": "nodemon",
+    "dev": "nodemon build/index.js",
+    "build": "tsc",
     "lint": "eslint . --ext .ts",
+    "lint-and-fix": "eslint . --ext .ts --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jultimrova/intern-api-task.git"
   },
-  "keywords": [],
+  "keywords": [
+    "node.js",
+    "typescript",
+    "CRUD",
+    "pg"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -20,7 +27,9 @@
   },
   "homepage": "https://github.com/jultimrova/intern-api-task#readme",
   "devDependencies": {
+    "@types/express": "^4.17.9",
     "@types/node": "^14.14.19",
+    "@types/pg": "^7.14.7",
     "@typescript-eslint/eslint-plugin": "^4.4.1",
     "@typescript-eslint/parser": "^4.11.1",
     "eslint": "^7.17.0",
@@ -29,5 +38,9 @@
     "nodemon": "^2.0.6",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.5.1"
   }
 }
