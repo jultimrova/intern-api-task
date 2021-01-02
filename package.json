@@ -1,0 +1,33 @@
+{
+  "name": "intern-task",
+  "version": "1.0.0",
+  "description": "school-api",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon",
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jultimrova/intern-api-task.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jultimrova/intern-api-task/issues"
+  },
+  "homepage": "https://github.com/jultimrova/intern-api-task#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.19",
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "@typescript-eslint/parser": "^4.11.1",
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-plugin-import": "^2.22.0",
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
